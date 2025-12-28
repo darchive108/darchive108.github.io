@@ -20,6 +20,8 @@ body {
         sans-serif;
     font-weight: 400;
     color: #222;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 :root {
@@ -10434,21 +10436,19 @@ body {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    max-width: 700px;
-    min-width: 480px;
-    margin: 0 auto;
-    /* background: rgba(0, 0, 0, 0.22); */
+    width: 100%;
+    background: rgba(0,0,0,0.22);
+  
     display: flex;
-    align-items: flex-end;
     justify-content: center;
-}
-
-/* text wrapper */
-.hero-content {
+  }
+  
+  .hero-content {
     text-align: center;
-    color: #ffffff;
-    padding-bottom: 64px;
-}
+    color: #fff;
+    margin-top: auto;          /* 핵심 */
+    padding-bottom: 64px;      /* 하단 여백 (취향값) */
+  }
 
 /* typography (통일) */
 .hero-eng {
